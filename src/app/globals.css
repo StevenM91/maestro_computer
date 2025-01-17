@@ -1,36 +1,36 @@
 @font-face {
-  font-family: "Anton", sans-serif;
-  src: url(./fonts/Anton-Regular.ttf);
+  font-family: "Anton";
+  src: url(./fonts/Anton-Regular.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: "Merriweather", sans-serif;
-  src: url(./fonts/Merriweather-Regular.ttf);
+  font-family: "Merriweather";
+  src: url(./fonts/Merriweather-Regular.ttf) format("truetype");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "PlaywriteIN", sans-serif;
-  src: url(./fonts/PlaywriteIN-Regular.ttf);
+  font-family: "PlaywriteIN";
+  src: url(./fonts/PlaywriteIN-Regular.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: "Jersey15", sans-serif;
-  src: url(./fonts/Jersey15-Regular.ttf);
+  font-family: "Jersey15";
+  src: url(./fonts/Jersey15-Regular.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: "PermanentMarker", sans-serif;
-  src: url(./fonts/PermanentMarker-Regular.ttf);
+  font-family: "PermanentMarker";
+  src: url(./fonts/PermanentMarker-Regular.ttf) format("truetype");
 }
 
 :root {
   --titleSite: "Anton", sans-serif;
-  --textSite: "merriweather", sans-serif;
+  --textSite: "Merriweather", sans-serif;
   --name: "PlaywriteIN", sans-serif;
   --titleHome: "PermanentMarker", sans-serif;
   --nav: "Jersey15", sans-serif;
-  --background: #070e19;
+  --background: #060c19;
   --textColor: rgb(230, 230, 230);
 }
 
@@ -50,45 +50,4 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-} */
-
-@media screen and (max-width: 1536px) {
-  .wrapper {
-    max-width: 1366px;
-  }
-}
-@media screen and (max-width: 1280px) {
-  .wrapper {
-    max-width: 1024px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .wrapper {
-    max-width: 768px;
-    padding-right: 40px;
-    padding-left: 40px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .wrapper {
-    max-width: 640px;
-  }
-}
-@media screen and (max-width: 640px) {
-  .wrapper {
-    max-width: 475px;
-  }
 }
