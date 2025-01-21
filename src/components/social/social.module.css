@@ -45,11 +45,21 @@
 @media screen and (max-width: 768px) {
   .icons,
   .title {
-    display: none;
+    /* display: none; */
+    font-size: 1.6rem;
   }
 
-  .partleft {
-    display: none;
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 640px) {
+  .icons,
+  .title {
+    /* display: none; */
+    font-size: 1.2rem;
   }
 
   .links {

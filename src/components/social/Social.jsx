@@ -6,7 +6,7 @@ const Social = () => {
     <div className={styles.container}>
       <div className={styles.logo}></div>
       <div>
-        <h2 className={styles.title}>Meastro Computer</h2>
+        <h2 className={styles.title}>Developpeur Web FullStack</h2>
       </div>
 
       <div className={styles.social}>
