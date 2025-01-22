@@ -215,6 +215,8 @@
   margin-top: 20px;
   display: flex;
   font-size: 1.7rem;
+  color: rgba(255, 255, 255, 0.554);
+  font-family: var(--titleSite);
 }
 
 .imgLang {
@@ -256,9 +258,18 @@
     line-height: 25px;
     margin-top: 5%;
   }
+
+  .titleLang {
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 640px) {
+  .container {
+    margin-bottom: 10%;
+  }
+
   .name {
     display: flex;
     flex-direction: column;
@@ -270,5 +281,50 @@
 
   .partRight {
     display: flex;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .partRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .titleLang {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .titleLangContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .imgLang {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .langLeft,
+  .langRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .title {
+    font-size: 1rem;
+  }
+
+  .container {
+    margin-bottom: 20%;
   }
 }
