@@ -5,3 +5,8 @@
   margin-left: 20px;
   height: 100vh;
 }
+
+.container {
+  overflow-y: auto;
+  margin-bottom: 30px;
+}

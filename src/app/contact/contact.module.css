@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-y: scroll;
 }
 
 .title {
@@ -23,11 +24,6 @@
 
 .formContainer {
   display: flex;
-  /* margin-left: 10px; */
-  justify-content: space-around;
-  height: 100%;
-  margin-top: 50px;
-  /* margin-left: 50px; */
 }
 
 .label {
@@ -213,22 +209,37 @@
 }
 
 @media screen and (max-width: 850px) {
+  .container {
+    margin-bottom: 30px;
+  }
+
+  .formContainer {
+    margin-bottom: 100px;
+    height: 80%;
+  }
+
   .input,
   .button {
     width: 450px;
   }
   .title {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   .subtitle {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
 @media screen and (max-width: 640px) {
+  .container {
+    overflow-y: scroll-y;
+  }
+
   .formContainer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 100px;
+    height: 80%;
   }
 
   .input,
@@ -247,6 +258,10 @@
   }
 }
 @media screen and (max-width: 540px) {
+  .container {
+    overflow-y: scroll;
+  }
+
   .formContainer {
     display: flex;
     justify-content: center;

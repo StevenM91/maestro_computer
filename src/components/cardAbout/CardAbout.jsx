@@ -177,7 +177,7 @@ const CardAbout = () => {
                     <div className={styles.titleLangContainer}>
                       <div className={styles.langLeft}>
                         <img
-                          src="/colorAbout/ThreeJs.png"
+                          src="/colorAbout/ThreeJS.png"
                           alt=""
                           className={styles.imgLang}
                         />{" "}

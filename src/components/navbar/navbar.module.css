@@ -58,17 +58,18 @@
   }
 
   .responsive {
-    position: absolute;
+    position: fixed;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    bottom: 15px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top: 20%;
     left: 50%;
+    bottom: 0;
     transform: translate(-50%);
-    margin: 0 auto;
     background: rgba(171, 171, 171, 0.216);
     border-radius: 10px;
     cursor: pointer;
+    z-index: 1;
   }
 
   .linkres {
@@ -77,7 +78,7 @@
     font-size: 20px;
     cursor: pointer;
     border-radius: 30px;
-    margin: 0 10px;
+    margin: 0 50px;
   }
 
   .image {
