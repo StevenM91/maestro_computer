@@ -3,8 +3,16 @@
 import Social from "@/components/social/Social";
 import styles from "./home.module.css";
 import GradientText from "@/components/gradientText/GradientText";
+import SplitText from "@/components/splitText/SplitText";
+import AnimatedTextBottomToTop from "@/components/animatedTextBottomToTop/AnimatedTextBottomToTop";
+import AnimatedTextRightToLeft from "@/components/animatedTextRightToLeft/AnimatedTextRightToLeft";
+import Ballpit from "@/components/ballPit/BallPit";
+import ScrollBasedAnimation from "@/components/ScrollBasedAnimation/ScrollBasedAnimation";
 
 const Home = () => {
+  const handleAnimationComplete = () => {
+    console.log("All letters have animated!");
+  };
   return (
     <>
       <div className={styles.container}>
@@ -22,8 +30,26 @@ const Home = () => {
           <div className={styles.partBottom}>
             <Social />
           </div>
+          <div
+            style={{
+              position: "absolute",
+              overflow: "hidden",
+              minHeight: "100%",
+              maxHeight: "100%",
+              width: "100%",
+              bottom: "0",
+            }}
+          >
+            <Ballpit
+              count={30}
+              gravity={0.2}
+              friction={1}
+              wallBounce={0.95}
+              followCursor={true}
+            />
+            <ScrollBasedAnimation />
+          </div>
         </div>
-        {/* <ScrollBasedAnimation /> */}
       </div>
     </>
   );

@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   margin: 0 auto;
+  z-index: 300;
 }
 
 .links {
@@ -13,6 +14,7 @@
   border-radius: 10px;
   margin-top: 13px;
   cursor: pointer;
+  z-index: 10;
 }
 
 .link {
