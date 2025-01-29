@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import NavBar from "@/components/navbar/NavBar";
+import BurgerMenu from "@/components/burgerMenu/BurgerMenu";
 
 export const metadata = {
   title: "Create Next App",
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
         <div className="container">
           <div className="wrapper">
             <NavBar />
+            <BurgerMenu />
             {children}
           </div>
         </div>

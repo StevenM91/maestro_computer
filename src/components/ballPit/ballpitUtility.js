@@ -518,7 +518,7 @@ const X = {
   maxY: 5,
   maxZ: 2,
   controlSphere0: false,
-  followCursor: true,
+  followCursor: false,
 };
 
 const U = new m();
@@ -588,7 +588,7 @@ class Z extends d {
     for (let idx = 0; idx < this.count; idx++) {
       U.position.fromArray(this.physics.positionData, 3 * idx);
       // Hide the first sphere if followCursor is false
-      if (idx === 0 && this.config.followCursor === false) {
+      if (idx === 0 && this.config.followCursor === true) {
         U.scale.setScalar(0);
       } else {
         U.scale.setScalar(this.physics.sizeData[idx]);

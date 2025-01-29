@@ -2,7 +2,7 @@ import { useRef, useEffect } from "react";
 import createBallpit from "./ballpitUtility";
 import styles from "./ballpit.module.css";
 
-const Ballpit = ({ className = "", followCursor = true, ...props }) => {
+const Ballpit = ({ className = "", followCursor = false, ...props }) => {
   const canvasRef = useRef(null);
   const spheresInstanceRef = useRef(null);
 

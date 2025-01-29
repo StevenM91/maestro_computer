@@ -1,10 +1,7 @@
 .container {
-  /* display: flex; */
-  /* flex-direction: column;
-  align-items: center;
-  justify-content: center; */
   height: 100vh;
   margin-top: 70px;
+  /* z-index: -1; */
 }
 
 .title {
@@ -14,11 +11,6 @@
   text-align: center;
   display: flex;
   justify-content: center;
-  /* color: rgb(209, 209, 209);
-  font-weight: bold;
-  text-shadow: 2px 2px 5px #ff00007f, -2px -2px 5px #00ff0088,
-    2px -2px 5px #0000ff56, -2px 2px 5px #ffff006c;
-  animation: glow 2s infinite alternate; */
 }
 
 .titlesecond {

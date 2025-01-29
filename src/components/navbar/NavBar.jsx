@@ -42,7 +42,7 @@ const NavBar = () => {
           </Link>
         </div>
         <div className={styles.responsive}>
-          <Link
+          {/* <Link
             href="/"
             className={`${pathname === "/" ? styles.active : styles.linkres}`}
           >
@@ -79,7 +79,7 @@ const NavBar = () => {
               alt="bouton home"
               className={styles.image}
             />
-          </Link>
+          </Link> */}
         </div>
       </div>
     </>

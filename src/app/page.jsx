@@ -3,11 +3,9 @@
 import Social from "@/components/social/Social";
 import styles from "./home.module.css";
 import GradientText from "@/components/gradientText/GradientText";
-import SplitText from "@/components/splitText/SplitText";
-import AnimatedTextBottomToTop from "@/components/animatedTextBottomToTop/AnimatedTextBottomToTop";
-import AnimatedTextRightToLeft from "@/components/animatedTextRightToLeft/AnimatedTextRightToLeft";
 import Ballpit from "@/components/ballPit/BallPit";
 import ScrollBasedAnimation from "@/components/ScrollBasedAnimation/ScrollBasedAnimation";
+import BurgerMenu from "@/components/burgerMenu/BurgerMenu";
 
 const Home = () => {
   const handleAnimationComplete = () => {
@@ -41,7 +39,7 @@ const Home = () => {
             }}
           >
             <Ballpit
-              count={30}
+              count={50}
               gravity={0.2}
               friction={1}
               wallBounce={0.95}
